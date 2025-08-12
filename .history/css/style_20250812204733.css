@@ -126,14 +126,13 @@ header {
     color: #0d7354;
 }
 
-
 /* Projects Grid */
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .project {
@@ -169,9 +168,8 @@ header {
     margin-bottom: 40px; /* Zyada space */
 }
 
-#projects h2,
-#contact h2 {
-    margin-bottom: 80px; 
+#projects h2 {
+    margin-bottom: 50px; 
 }
 
 .project a {
@@ -189,6 +187,10 @@ header {
 .project a:hover {
     background: #00e6ff;
     color: #000;
+}
+
+.projects-grid {
+    margin-top: 50px;
 }
 
 

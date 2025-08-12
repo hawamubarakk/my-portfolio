@@ -1,0 +1,123 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #00ffff;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff9800;
+    text-shadow: 0 0 10px #ff9800;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #000, #111);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #00ffff;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ccc;
+}
+
+.hero span {
+    color: #ff9800;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #00ffff;
+    text-align: center;
+}
+
+.section p, .section ul {
+    font-size: 18px;
+    color: #ddd;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-box {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffff;
+}
+
+.contact-box h3 {
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.contact-box a {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}

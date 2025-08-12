@@ -80,7 +80,7 @@ header {
     font-size: 38px;
     margin-bottom: 25px;
     text-align: center;
-    text-transform: none;
+    text-transform: uppercase;
     letter-spacing: 2px;
 }
 
@@ -126,14 +126,13 @@ header {
     color: #0d7354;
 }
 
-
 /* Projects Grid */
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .project {
@@ -168,12 +167,6 @@ header {
 .projects-heading {
     margin-bottom: 40px; /* Zyada space */
 }
-
-#projects h2,
-#contact h2 {
-    margin-bottom: 80px; 
-}
-
 .project a {
     display: inline-block;
     color: #00e6ff;
@@ -190,8 +183,6 @@ header {
     background: #00e6ff;
     color: #000;
 }
-
-
 
 @media (max-width: 720px) {
     .project {

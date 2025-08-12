@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+    padding: 15px 0;
+    border-bottom: 2px solid #ff4d6d; /* Pink border */
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #ff4d6d; /* Pink text */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff4d6d, #1a1a1a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    max-width: 600px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-content span {
+    color: #ffd700; /* Gold highlight */
+    font-weight: bold;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section h2 {
+    color: #ff4d6d;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.section p,
+.section ul {
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+/* Projects List */
+#projects ul {
+    list-style: square inside;
+}
+
+#projects li {
+    margin: 10px 0;
+}
+
+/* Contact Boxes */
+.contact-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-box {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 1px solid #ff4d6d;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+    background-color: #ff4d6d;
+}
+
+.contact-box h3 {
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.contact-box a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
