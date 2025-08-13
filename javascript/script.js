@@ -73,3 +73,13 @@ document.getElementById("backToTop").addEventListener("click", () => {
       behavior: "smooth"
     });
   });
+
+  const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 300) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+});
