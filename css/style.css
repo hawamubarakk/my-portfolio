@@ -351,7 +351,9 @@ footer {
     border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
-    display: none; /* Initially hidden */
+    opacity: 0; /* Hidden by default */
+    pointer-events: none; /* Prevent click when hidden */
+    transition: opacity 0.3s ease-in-out;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
@@ -359,4 +361,21 @@ footer {
     background-color: #145d48;
 }
 
+#backToTop.show {
+    opacity: 1;
+    pointer-events: auto; /* Clickable when visible */
+}
 
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
